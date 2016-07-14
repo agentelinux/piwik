@@ -8,8 +8,8 @@ dbname = "piwikdb"
 tables_prefix = "piwik_"
 
 [General]
-salt = "fda9b82101ed3c42df552d4e8e329554"
-trusted_hosts[] = "40.76.9.24"
+salt = "5ed42360f4d63b6cb821198913691dcf"
+trusted_hosts[] = "azuldocker6781.cloudapp.net"
 trusted_hosts[] = "teste-apps.voeazul.com.br"
 
 [PluginsInstalled]

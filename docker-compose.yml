@@ -14,9 +14,15 @@ web:
     - /opt/compose/piwikazv/nginx.conf:/etc/nginx/nginx.conf
   links:
     - app
-    - db
   volumes_from:
     - app
   ports:
     - 81:80
+lbsql:
+  image: nginx
+  volumes:
+    - /opt/compose/piwikazv/nginx_mysql.conf:/etc/nginx/nginx.conf
+  links:
+    - db
+  ports:
     - 3306:3306
