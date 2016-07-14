@@ -19,8 +19,9 @@ The easiest is to use our `docker-compose.yml`.
 Make sure you have [docker-compose](http://docs.docker.com/compose/install/) installed. And then:
 
 ```bash
-git clone https://github.com/indiehosters/piwik.git
-cd docker-piwik
+mkdir -p /opt/compose/
+git clone https://github.com/indiehosters/piwik.git 
+cd piwik
 # edit variables in the docker-compose file or pass them from your comamnd line
 docker-compose up
 ```
